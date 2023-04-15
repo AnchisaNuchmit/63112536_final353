@@ -1,4 +1,4 @@
-from main import buything, buying
+from main import buything
 import pytest
 
 @pytest.mark.code # pytest -m code
