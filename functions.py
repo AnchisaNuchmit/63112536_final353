@@ -1,4 +1,3 @@
-
 def buything(type, number):
     price = 0 
     if type == 1:
@@ -26,14 +25,14 @@ def buything(type, number):
         print("price :",price)
         return(price)
     
-def discountprice(total, number):   
-        answer = input("Do you take glasses from home? True or False?")
-        if answer == "True":
-            print("Get discount 5 Baht each glasses.")
-            discount = number*5
-            total= total-discount
-        elif type == "False":
-            print("Do not get discount 5 Baht each glasses.")
+def discountprice(total, number, answer):  
+    if answer == "True":
+        print("Get discount 5 Baht each glasses.")
+        discount = number*5
+        total= total-discount
+        return (total)
+    elif answer == "False":
+        print("Do not get discount 5 Baht each glasses.")
         return (total)
        
     
