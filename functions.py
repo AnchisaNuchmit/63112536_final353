@@ -1,43 +1,39 @@
 
-def buything():
-    price = 0
-    type = int(input("Plase select (1) Espresso (2) Cappuccino (3) Latte (4) Mocha : "))
-    if type > 4 or type < 0 :
-        print("Wrong Selection. Plase select on the list only.")
-        type = int(input("Plase select (1) Espresso (2) Cappuccino (3) Latte (4) Mocha : "))
-
-    number = int(input("Plase input number of glasses : "))
+def buything(type, number):
+    price = 0 
     if type == 1:
         print(type)
         print (number,"glasses")
         price = number*55
         print("price :",price)
-        return("Espresso")
+        return(price)
     elif type == 2:
         print(type)
         print (number,"glasses")
         price = number*60
         print("price :",price)
-        return("Cappuccino")
+        return(price)
     elif type == 3:
         print(type)
         print (number,"glasses")
         price = number*65
         print("price :",price)
-        return("Latte")
+        return(price)
     elif type == 4:
         print(type)
         print (number,"glasses")
         price = number*70
         print("price :",price)
-        return("Mocha")
-       
-    def discountprice(price):   
+        return(price)
+    
+def discountprice(total, number):   
         answer = input("Do you take glasses from home? True or False?")
         if answer == "True":
             print("Get discount 5 Baht each glasses.")
             discount = number*5
-            price = price-discount
+            total= total-discount
         elif type == "False":
             print("Do not get discount 5 Baht each glasses.")
-        return (price)
+        return (total)
+       
+    
