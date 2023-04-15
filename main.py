@@ -11,7 +11,8 @@ while buying == "y" :
     else :
         number = int(input("Plase input number of glasses : "))
         total = buything(type, number)
-        realtotal = discountprice(total, number)   
+        answer = str(input("Do you take glasses from home? True or False?"))
+        realtotal = discountprice(total, number, answer)   
     
         print("Total price :",realtotal)
     buying = str(input("Do you want to make another order? y/n : "))
